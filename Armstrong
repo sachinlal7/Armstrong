@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <math.h>
+
+void main()
+{
+	int num,org,p=0,rem,rev=0;
+		printf("enter the number");
+		scanf("%d",&num);
+		org=num;
+	    while (num>0)
+		{
+		  num=num/10;
+		  p++;
+        }
+		num=org;
+		while (num>0) 
+		{
+		  rem=num%10;
+		  rev=pow(rem,p)+rev;
+		  num=num/10;
+	    }
+	    
+		if (rev==org)
+		printf("this is armstromg number");
+		else	
+		printf("not a armstrong");
+		
+		
+}
